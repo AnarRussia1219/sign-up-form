@@ -8,6 +8,11 @@ html, body {
 }
 
 /* above section for defaut overrides */
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./assets/Norse-Bold.otf);
+}
+
 :root {
     --button-border-radius: 8px;
     --input-border-radius: 4px;
@@ -23,4 +28,29 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* to position the texts, change height to move the texts up/down */
+.page-left-side::before {
+    content: "";
+    height: 100px;
+}
+
+.page-left-side-texts {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Norse Bold";
+    color: white;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .85rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.page-left-side-texts > img {
+    height: 85px;
 }

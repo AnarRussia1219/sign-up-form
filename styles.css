@@ -7,7 +7,20 @@ html, body {
     height: 100%;
 }
 
+/* above section for defaut overrides */
 :root {
     --button-border-radius: 8px;
     --input-border-radius: 4px;
+}
+
+body {
+    display: flex;
+}
+
+.page-left-side {
+    width: 340px;
+    background-image: url(./assets/main-bg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
